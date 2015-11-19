@@ -1,2 +1,6 @@
-<h1>Home#list</h1>
-<p>Find me in app/views/home/list.html.erb</p>
+<h2>List of phone numbers</h2>
+<% @numbers.each do |n| %>
+name : <%= n.name %><br/>
+phone number : <%= n.phone_number %>
+<% end %>
+<a href ="/home/add">add a new number</a>
